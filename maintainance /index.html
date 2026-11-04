@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a3c">
+  <meta name="description" content="We’re upgrading our systems. We’ll be back online soon.">
+  <title>System Upgrade in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="orbit orbit-one"><span></span></div>
+    <div class="orbit orbit-two"><span></span></div>
+    <div class="particles" id="particles"></div>
+  </div>
 
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>PORTAL<span class="brand-light">.SYSTEMS</span></span>
+      </a>
+      <div class="status-pill"><span class="status-dot"></span> SYSTEM UPGRADE</div>
+    </header>
+
+    <section class="hero" id="home" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A BETTER EXPERIENCE IS LOADING</div>
+        <h1 id="page-title">We’ll be<br><span>back online</span><br>soon<span class="title-period">.</span></h1>
+        <p class="intro">We’re making a few upgrades behind the scenes. Our portal will be back shortly with a faster, smoother experience.</p>
+        <div class="progress-block">
+          <div class="progress-label"><span>UPGRADE PROGRESS</span><span class="progress-value" id="progress-value">0%</span></div>
+          <div class="progress-track" role="progressbar" aria-label="Upgrade progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar"><span class="progress-fill" id="progress-fill"></span></div>
+          <div class="progress-caption"><span><i></i> All systems operating normally</span><span>Almost there</span></div>
+        </div>
+        <a class="refresh-link" href="" id="refresh-link"><span class="refresh-icon" aria-hidden="true">↻</span> Check again <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="visual" aria-hidden="true">
+        <div class="visual-label label-top"><span class="label-indicator"></span> CORE SYSTEMS</div>
+        <div class="visual-label label-bottom">SECURE CONNECTION <span class="lock-icon">◈</span></div>
+        <div class="tech-graphic">
+          <div class="ring ring-outer"></div>
+          <div class="ring ring-middle"></div>
+          <div class="ring ring-inner"></div>
+          <div class="ring-dash"></div>
+          <div class="core"><div class="core-inner"><span class="core-symbol">⌘</span><span class="core-spark"></span></div></div>
+          <div class="crosshair crosshair-top"></div>
+          <div class="crosshair crosshair-bottom"></div>
+          <div class="data-node node-one"><span></span></div>
+          <div class="data-node node-two"><span></span></div>
+          <div class="data-node node-three"><span></span></div>
+          <div class="data-node node-four"><span></span></div>
+          <div class="scan-line"></div>
+        </div>
+        <div class="data-readout readout-one"><span>SYS.STATUS</span><strong>UPGRADING</strong></div>
+        <div class="data-readout readout-two"><span>NETWORK</span><strong><i></i> CONNECTED</strong></div>
+        <div class="visual-corner corner-one"></div><div class="visual-corner corner-two"></div>
+      </div>
+    </section>
+
+    <footer class="footer"><span>THANK YOU FOR YOUR PATIENCE</span><span class="footer-divider"></span><span>© <span id="year"></span> PORTAL SYSTEMS</span></footer>
+  </main>
+</body>
+</html>
